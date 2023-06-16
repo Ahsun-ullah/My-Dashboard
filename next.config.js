@@ -5,11 +5,11 @@ const nextConfig = {
 
 module.exports = {
   nextConfig,
-  exportPathMap: function () {
+  generateStaticParams: function () {
     return {
       "/": { page: "/" },
       // Add more route mappings here if needed
     };
   },
-  exportTrailingSlash: true, // Enable trailing slashes in exported URLs
+  trailingSlash: true, // Enable trailing slashes in exported URLs
 };
